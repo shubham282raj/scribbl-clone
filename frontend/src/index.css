@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Hide scrollbar for WebKit-based browsers */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keep scrolling */
+.hide-scrollbar {
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@theme {
+  --font-cabin-sketch: "CabinSketch";
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+@font-face {
+  font-family: CabinSketch;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("CabinSketch-Regular.ttf") format("woff2");
+}
